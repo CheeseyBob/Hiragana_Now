@@ -1,0 +1,11 @@
+DESIGN DOCUMENT: Hiragana Now
+
+
+~~ TO-DO ~~
+
+[Game is feature-complete]
+
+
+~~ Bugs ~~
+
+> Visuals appear glitchy/laggy when run on Linux.
