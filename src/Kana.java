@@ -87,8 +87,6 @@ class Kana {
 			"re:れ:"+
 			"ro:ろ:"+
 			"wa:わ:"+
-			"wi:ゐ:"+
-			"we:ゑ:"+
 			"wo:を:"+
 			"n:ん:";
 		loadCharacterData(dataString.split(":"));
@@ -165,8 +163,6 @@ class Kana {
 			"re:レ:"+
 			"ro:ロ:"+
 			"wa:ワ:"+
-			"wi:ヰ:"+
-			"we:ヱ:"+
 			"wo:ヲ:"+
 			"n:ン:";
 		loadCharacterData(dataString.split(":"));

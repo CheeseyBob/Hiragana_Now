@@ -7,7 +7,7 @@ import java.util.ListIterator;
 import javax.swing.*;
 
 class HiraganaNow implements KeyListener {
-	static final String title = "Hiragana Now - v1.0";
+	static final String title = "Hiragana Now - v1.1";
 	
 	LinkedList<Kana> currentKanaList = new LinkedList<Kana>();
 	LinkedList<Kana> remainingKanaList = new LinkedList<Kana>();
