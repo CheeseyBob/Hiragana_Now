@@ -38,7 +38,15 @@ class HiraganaNow implements KeyListener {
 	JLabel passesLabel = new JLabel();
 	JLabel progressLabel = new JLabel();
 	JLabel levelLabel = new JLabel();
-	JFrame window = new JFrame(title);
+	JFrame window = new JFrame(title) {
+		private static final long serialVersionUID = 1L;
+		
+		@Override
+		public void paint(Graphics g) {
+			Toolkit.getDefaultToolkit().sync();
+			super.paint(g);
+		};
+	};
 	JLabel kanaLabel = new JLabel();
 	JTextField inputField = new JTextField();
 	
@@ -117,7 +125,7 @@ class HiraganaNow implements KeyListener {
 					"Enter the character's romanisation, e.g. \"tsu\" for \"つ\", then press enter.\n"+
 					"Enter \"?\" to use a pass: this shows you the answer, but you have a limited supply.\n" +
 					"If you enter the wrong romanisation, you lose HP. Once your HP runs out, you lose.\n" +
-					"The better you do, the more levels you increase. Get to the final level!\n" +
+					"The better you do, the faster your level increases. Get to the final level!\n" +
 					"\n" +
 					"Send feedback to cheeseybobdev@gmail.com";
 				JOptionPane.showMessageDialog(null, instructionMessage, "Instructions - "+title, JOptionPane.PLAIN_MESSAGE);
